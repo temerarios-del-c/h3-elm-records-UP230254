@@ -75,9 +75,9 @@ type alias Videogame =
     { title : String, releaseYear : Int, available : Bool, downloads : Int, genres : List String }
 
 
-getVideogameGenres : Videogame -> List String
+getVideogameGenres : List Videogame -> List String
 getVideogameGenres list =
-    .genres list
+    List.map .genres list
 
 
 games : List Videogame
