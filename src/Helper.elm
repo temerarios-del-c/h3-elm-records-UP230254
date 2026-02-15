@@ -75,11 +75,6 @@ type alias Videogame =
     { title : String, releaseYear : Int, available : Bool, downloads : Int, genres : List String }
 
 
-getVideogameGenres : List Videogame -> List String
-getVideogameGenres list =
-    List.map .genres list
-
-
 games : List Videogame
 games =
     [ { title = "Control"
