@@ -42,8 +42,8 @@ langs =
     ]
 
 
-lenguageNames : List { name : String, releaseYear : Int, currentVersion : String } -> List String
-lenguageNames list =
+languageNames : List { name : String, releaseYear : Int, currentVersion : String } -> List String
+languageNames list =
     List.map .name list
 
 
