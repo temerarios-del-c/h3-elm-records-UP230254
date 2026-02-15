@@ -5,7 +5,6 @@ import Html exposing (..)
 
 
 --Type annotation
--- 1. Función para sumar dos enteros
 
 
 add2 : Int -> Int -> Int
@@ -13,17 +12,9 @@ add2 int1 int2 =
     int1 + int2
 
 
-
--- 2. Función para sumar tres floats
-
-
 add3 : Float -> Float -> Float -> Float
 add3 val1 val2 val3 =
     val1 + val2 + val3
-
-
-
--- 3. Función "calc" (Higher-order function)
 
 
 calc : Int -> Int -> (Int -> Int -> Int) -> Int
